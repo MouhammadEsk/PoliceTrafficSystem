@@ -1,0 +1,93 @@
+<?php
+
+namespace Database\Seeders;
+
+use Spatie\Permission\Models\Role;
+use Illuminate\Database\Seeder;
+
+class RoleSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+        $Admin_permission=[
+            'role_grant',
+            'role_revoke',
+            'role_show',//every user with his roles
+            'find_driver_by_car_num',//serach
+            'show_driver_cars',
+            'index_provinces',
+            'store_provinces',
+            'update_provinces',
+            'delete_provinces',
+            'index_violationtype',
+            'store_violationtype',
+            'delete_violationtype',
+            'my_violation',//show violation with other details like violationtype ,province,car
+            'show_violation',//show one(a single) violation
+            'store_violation',
+            'update_violation',
+            'delete_violation',
+            'index_car',
+            'show_car',//show one(a single) car
+            'store_car',
+            'update_car',
+            'search_car',
+            'delete_car',
+            'sign_up',
+            'login',
+            'logout',
+            'do_driving_test'
+        ];
+        $Employee_permission=[
+            'find_driver_by_car_num',//serach
+            'show_driver_cars',
+            'index_provinces',
+            'store_provinces',
+            'update_provinces',
+            'delete_provinces',
+            'index_violationtype',
+            'store_violationtype',
+            'delete_violationtype',
+            'my_violation',//show violation with other details like violationtype ,province,car
+            'show_violation',//show one(a single) violation
+            'store_violation',
+            'update_violation',
+            'delete_violation',
+            'index_car',
+            'show_car',//show one(a single) car
+            'store_car',
+            'update_car',
+            'search_car',
+            'delete_car',
+            'sign_up',
+            'login',
+            'logout',
+        ];
+
+        $PoliceMan_permissions=[
+            'search_car',
+            'store_violation',
+            'sign_up',
+            'login',
+            'logout',
+        ];
+        $driver_permissions=[
+            'do_driving_test',
+            'show_profile',
+            'my_violation',//show violation with other details like violationtype ,province,car
+            'sign_up',
+            'login',
+            'logout',
+        ];
+        $user_permssions=[
+            'do_driving_test',
+
+        ];
+    }
+}
